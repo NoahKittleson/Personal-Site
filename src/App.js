@@ -27,7 +27,7 @@ class Toggle extends React.Component {
 		//this is necessary to make this a function that can change state of the class
 		//unbounded functions are unable to modify the state of the class because JS is dumb and member functions
 		//aren't functions that have any connection to the class itself, they more just use it as a namespace.
-		//... or you could put handleClick = () => {/definition/}.  Although this seems more explicit.
+		//... or you could put handleClick = () => {/definition/}.  Although this seems more explicit.	
 		this.handleClick = this.handleClick.bind(this);
 	}
 
@@ -44,12 +44,18 @@ class Toggle extends React.Component {
 	}
 }
 
+const numbers = [1, 2, 3, 4, 5];
+const listItems = numbers.map((number) =>
+  <li>{number}</li>
+);
+
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
+          <ul>{listItems}</ul>
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
