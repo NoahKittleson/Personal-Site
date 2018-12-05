@@ -20,6 +20,14 @@ class AnotherTest extends React.Component {
 	}
 }
 
+class NavLinks extends React.Component {
+	render() {
+		return <div className={this.props.class}>
+			<h1 className="link"> {this.props.text} </h1>
+		</div>
+	}
+}
+
 class Toggle extends React.Component {
 	constructor (props) {
 		super(props);
@@ -70,6 +78,9 @@ class App extends Component {
             <AnotherTest name="Noah" />
           </a>
           <Toggle />
+          <NavLinks text="ART" class="top-right"/>
+          <NavLinks text="CODE" class="top-left"/>
+
         </header>
       </div>
     );
