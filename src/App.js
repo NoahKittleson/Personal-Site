@@ -22,8 +22,10 @@ class AnotherTest extends React.Component {
 
 class NavLinks extends React.Component {
 	render() {
-		return <div className={this.props.class}>
-			<h1 className="link"> {this.props.text} </h1>
+		return <div id={this.props.class} className="nav-box">
+		<h1>
+			<a className="link" href="#"> {this.props.text} </a>
+			</h1>
 		</div>
 	}
 }

@@ -8,7 +8,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #FFE5B5;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -31,25 +31,34 @@
   }
 }
 
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  size: 15px;
+  color: #C95934;
+}
+
 .link {
-  color: rgb(250,0,0);
+  color: #BC5331;
   text-align: center;
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-.top-right {
+.nav-box {
   position: absolute;
-  background: rgb(0,0,250);
+  background: #424555;
   width: 200px;
+}
+
+#top-left {
   left: 0px;
   top: 0px;
 }
 
-.top-left {
-  position: absolute;
-  background: rgb(0,0,250);
-  width: 200px;
+#top-right {
   right: 0px;
   top: 0px;
 }
