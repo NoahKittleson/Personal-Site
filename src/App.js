@@ -64,9 +64,9 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <h3> I am Noah Kittleson. </h3>
-          <p> You are now in <span className="my-zone">MY ZONE.</span> </p>
+          <p> You are now in </p>
+          <p><span className="my-zone">MY ZONE</span></p>
 
           <a
             className="App-link"
