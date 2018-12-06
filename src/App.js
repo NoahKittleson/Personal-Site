@@ -65,24 +65,20 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <ul>{listItems}</ul>
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
+          <h3> I am Noah Kittleson. </h3>
+          <p> You are now in <span className="my-zone">MY ZONE.</span> </p>
+
           <a
             className="App-link"
             href="https://reactjs.org"
             target="_blank"
-            rel="noopener noreferrer"
-          >
-            {element}
-            {test()}
-            <AnotherTest name="Noah" />
+            rel="noopener noreferrer" >
           </a>
           <Toggle />
           <NavLinks text="ART" class="top-right"/>
           <NavLinks text="CODE" class="top-left"/>
-
+          <NavLinks text="WORDS" class="bottom-right"/>
+          <NavLinks text="GAMES" class="bottom-left"/>
         </header>
       </div>
     );

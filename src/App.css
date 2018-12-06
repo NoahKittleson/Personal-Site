@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #37301D;
 }
 
 .App-link {
@@ -61,4 +61,19 @@ a:hover {
 #top-right {
   right: 0px;
   top: 0px;
+}
+
+#bottom-right {
+  right: 0px;
+  bottom: 0px;
+}
+
+#bottom-left {
+  left: 0px;
+  bottom: 0px;
+}
+
+.my-zone {
+  size: 100px;
+  color: black;
 }
