@@ -24,7 +24,7 @@ class NavLinks extends React.Component {
 	render() {
 		return <div id={this.props.class} className="nav-box">
 		<h1>
-			<a className="link" href="#"> {this.props.text} </a>
+			<a className="link" href="#" onClick={this.props.callback}> {this.props.text} </a>
 			</h1>
 		</div>
 	}
@@ -54,28 +54,71 @@ class Toggle extends React.Component {
 	}
 }
 
-const numbers = [1, 2, 3, 4, 5];
-const listItems = numbers.map((number) =>
-  <li>{number}</li>
-);
+class LandingPage extends React.Component {
+	render() {
+		  return <div>
+			  <h2> I am Noah Kittleson. </h2>
+	          <p> You are now in <br/> <span className="my-zone">MY ZONE</span></p>
+
+	          <a
+	            className="App-link"
+	            href="https://reactjs.org"
+	            target="_blank"
+	            rel="noopener noreferrer" >
+	          </a>
+	          <Toggle />
+          </div>
+	}
+}
+
+class CodePage extends React.Component {
+	render() {
+		return <p>This is the Code Page</p>
+	}
+}
+
+class ArtPage extends React.Component {
+	render() {
+		return <p>This is the Art Page</p>
+	}
+}
+
+class GamePage extends React.Component {
+	render() {
+		return <p>This is the Game Page</p>
+	}
+}
+
+class WordPage extends React.Component {
+	render() {
+		return <p>This is the Words Page</p>
+	}
+}
+
+const pages = [<LandingPage />, <CodePage />, <GamePage />, <ArtPage />, <WordPage />];
+// const listItems = numbers.map((number) =>
+//   <li>{number}</li>
+// );
 
 class App extends Component {
+  constructor (props) {
+	  super(props);
+	  this.state = {index: 0 };
+	  this.handleClick = this.handleClick.bind(this);
+  }
+
+	 handleClick() {
+  		this.setState(state => ({
+				index: 1
+			}));
+  	}
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <h3> I am Noah Kittleson. </h3>
-          <p> You are now in </p>
-          <p><span className="my-zone">MY ZONE</span></p>
-
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer" >
-          </a>
-          <Toggle />
-          <NavLinks text="ART" class="top-right"/>
+          {pages[this.state.index]}
+          <NavLinks text="ART" class="top-right" callback= {this.handleClick}/>
           <NavLinks text="CODE" class="top-left"/>
           <NavLinks text="WORDS" class="bottom-right"/>
           <NavLinks text="GAMES" class="bottom-left"/>
