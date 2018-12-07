@@ -24,7 +24,7 @@ class NavLinks extends React.Component {
 	render() {
 		return <div id={this.props.class} className="nav-box">
 		<h1>
-			<a className="link" href="#" onClick={this.props.callback}> {this.props.text} </a>
+			<a className="link" href="#" onClick={() => this.props.callback(this.props.index)}> {this.props.text} </a>
 			</h1>
 		</div>
 	}
@@ -95,22 +95,23 @@ class WordPage extends React.Component {
 	}
 }
 
-const pages = [<LandingPage />, <CodePage />, <GamePage />, <ArtPage />, <WordPage />];
-// const listItems = numbers.map((number) =>
-//   <li>{number}</li>
-// );
+const pages = [<LandingPage />, <CodePage />, <ArtPage />, <GamePage />, <WordPage />];
+const pageItems = pages.map((page) =>
+  <div key={page.id}> {page} </div>
+);
 
 class App extends Component {
   constructor (props) {
 	  super(props);
 	  this.state = {index: 0 };
-	  this.handleClick = this.handleClick.bind(this);
+	  this.changePage = this.changePage.bind(this);
   }
 
-	 handleClick() {
+	 changePage(number) {
   		this.setState(state => ({
-				index: 1
+				index: number
 			}));
+			console.log("called with value: " + number);
   	}
 
   render() {
@@ -118,10 +119,10 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           {pages[this.state.index]}
-          <NavLinks text="ART" class="top-right" callback= {this.handleClick}/>
-          <NavLinks text="CODE" class="top-left"/>
-          <NavLinks text="WORDS" class="bottom-right"/>
-          <NavLinks text="GAMES" class="bottom-left"/>
+          <NavLinks text="CODE" class="top-left" index={1} callback={this.changePage}/>
+          <NavLinks text="ART" class="top-right" index={2} callback={this.changePage}/>
+          <NavLinks text="GAMES" class="bottom-left" index={3} callback={this.changePage}/>
+          <NavLinks text="WORDS" class="bottom-right" index={4} callback={this.changePage}/>
         </header>
       </div>
     );
