@@ -7,6 +7,22 @@
   height: 40vmin;
 }
 
+
+/* The animation code */
+@keyframes example {
+  0%   { top:-600px; }
+  90%  { top: 20px;  }
+  100% { top: 0px;   }
+}
+
+.body {
+  animation-name: example;
+  position: relative;
+  animation-duration: 1s;
+  /*animation-timing-function: linear;*/
+  animation-timing-function: cubic-bezier(.48,.19,.88,.6);
+}
+
 .App-header {
   background-color: #FFE5B5;
   min-height: 100vh;
@@ -15,7 +31,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  background-image: url("Nunu.png");
+  background-image: url("Nunu2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

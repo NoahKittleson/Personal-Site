@@ -56,7 +56,7 @@ class Toggle extends React.Component {
 
 class LandingPage extends React.Component {
 	render() {
-		  return <div>
+		  return <div className="body">
 			  <h2> I am Noah Kittleson. </h2>
 	          <p> You are now in <br/> <span className="my-zone">MY ZONE</span></p>
 
