@@ -9,21 +9,24 @@
 
 
 /* The animation code */
-@keyframes example {
+@keyframes slideIn {
   0%   { top:-600px; }
   90%  { top: 20px;  }
   100% { top: 0px;   }
 }
 
 .body {
-  animation-name: example;
+  animation-name: slideIn;
+  width: 100%;
+  height: 100%;
   position: relative;
   animation-duration: 1s;
   /*animation-timing-function: linear;*/
-  animation-timing-function: cubic-bezier(.48,.19,.88,.6);
+  animation-timing-function: cubic-bezier(.5,.2,.9,.6);
 }
 
-.App-header {
+#App-header {
+  overflow: hidden;
   background-color: #FFE5B5;
   min-height: 100vh;
   display: flex;
@@ -106,3 +109,23 @@ a:hover {
   font-size: 100px;
   color: black;
 }
+
+#code {
+  background-color: red;
+}
+
+#art {
+  background-color: black;
+}
+
+#games {
+  background-color: blue;
+}
+
+#words {
+  background-color: purple;
+}
+
+
+
+

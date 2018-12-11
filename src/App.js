@@ -2,24 +2,6 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-const element = <p>This is supposed to be here</p>
-
-function test () {
-	return <h1> This is a <i>Header</i> </h1>
-}
-
-class Welcome extends React.Component {
-  render() {
-    return <h1>Hello, {this.props.name}</h1>;
-  }
-}
-
-class AnotherTest extends React.Component {
-	render() {
-		return <h1>Hello {this.props.name}</h1>;
-	}
-}
-
 class NavLinks extends React.Component {
 	render() {
 		return <div id={this.props.class} className="nav-box">
@@ -56,42 +38,50 @@ class Toggle extends React.Component {
 
 class LandingPage extends React.Component {
 	render() {
-		  return <div className="body">
-			  <h2> I am Noah Kittleson. </h2>
-	          <p> You are now in <br/> <span className="my-zone">MY ZONE</span></p>
+	  return <div>
+		  <h2> I am Noah Kittleson. </h2>
+      <p> You are now in <br/> <span className="my-zone">MY ZONE</span></p>
 
-	          <a
-	            className="App-link"
-	            href="https://reactjs.org"
-	            target="_blank"
-	            rel="noopener noreferrer" >
-	          </a>
-	          <Toggle />
-          </div>
+      <a
+        className="App-link"
+        href="https://reactjs.org"
+        target="_blank"
+        rel="noopener noreferrer" >
+      </a>
+      <Toggle />
+    </div>
 	}
 }
 
 class CodePage extends React.Component {
 	render() {
-		return <p>This is the Code Page</p>
+		return <div className="body" id="code">
+			<p>This is the Code Page</p>
+		</div>
 	}
 }
 
 class ArtPage extends React.Component {
 	render() {
-		return <p>This is the Art Page</p>
+		return <div className="body" id="art">
+			<p>This is the Art Page</p>
+		</div>
 	}
 }
 
 class GamePage extends React.Component {
 	render() {
-		return <p>This is the Game Page</p>
+		return <div className="body" id="games">
+			<p>This is the Game Page</p>
+		</div>
 	}
 }
 
 class WordPage extends React.Component {
 	render() {
-		return <p>This is the Words Page</p>
+		return <div className="body" id="words">
+			<p>This is the Words Page</p>
+		</div>
 	}
 }
 
@@ -117,13 +107,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        <header id="App-header">
           {pages[this.state.index]}
-          <NavLinks text="CODE" class="top-left" index={1} callback={this.changePage}/>
-          <NavLinks text="ART" class="top-right" index={2} callback={this.changePage}/>
-          <NavLinks text="GAMES" class="bottom-left" index={3} callback={this.changePage}/>
-          <NavLinks text="WORDS" class="bottom-right" index={4} callback={this.changePage}/>
         </header>
+        <NavLinks text="CODE" class="top-left" index={1} callback={this.changePage}/>
+        <NavLinks text="ART" class="top-right" index={2} callback={this.changePage}/>
+        <NavLinks text="GAMES" class="bottom-left" index={3} callback={this.changePage}/>
+        <NavLinks text="WORDS" class="bottom-right" index={4} callback={this.changePage}/>
       </div>
     );
   }
