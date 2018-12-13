@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 class NavLinks extends React.Component {
@@ -38,16 +38,9 @@ class Toggle extends React.Component {
 
 class LandingPage extends React.Component {
 	render() {
-	  return <div>
+	  return <div id="landing">
 		  <h2> I am Noah Kittleson. </h2>
       <p> You are now in <br/> <span className="my-zone">MY ZONE</span></p>
-
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer" >
-      </a>
       <Toggle />
     </div>
 	}
@@ -56,7 +49,10 @@ class LandingPage extends React.Component {
 class CodePage extends React.Component {
 	render() {
 		return <div className="body" id="code">
-			<p>This is the Code Page</p>
+			<p>I am a Junior Web and Software Developer living in Portland, Oregon.  In 2014, I started by teaching myself 
+			programming in C++, and in 2016 I enrolled in <a href="https://www.epicodus.com/">Epicodus</a> to get training 
+			in Web Development.  I specialize in Object Oriented Programming, but no matter the language, I just like to 
+			make fun things.  Check out my GitHub!</p>
 		</div>
 	}
 }
@@ -86,9 +82,9 @@ class WordPage extends React.Component {
 }
 
 const pages = [<LandingPage />, <CodePage />, <ArtPage />, <GamePage />, <WordPage />];
-const pageItems = pages.map((page) =>
-  <div key={page.id}> {page} </div>
-);
+// const pageItems = pages.map((page) =>
+//   <div key={page.id}> {page} </div>
+// );
 
 class App extends Component {
   constructor (props) {
