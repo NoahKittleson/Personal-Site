@@ -52,17 +52,17 @@ class CodePage extends React.Component {
 		return <div className="body" id="code">
 			<div class="grid-container outline">
 				<div class= "row">
-					<div className="col-2">
+					<div className="col-2 codeImg">
 						<img src={codeImg} alt="A picture of the code for this webpage."/>
 					</div>
 					<div className="col-3">
 						<h3>About Me:</h3>
-						<p>I am a Junior Web and Software Developer living in Portland, Oregon.  In 2014, I started by teaching myself 
+						<p id="codeText">I am a Junior Web and Software Developer living in Portland, Oregon.  In 2014, I started by teaching myself 
 						programming in C++, and in 2016 I enrolled in <a href="https://www.epicodus.com/">Epicodus</a> to get training 
 						in Web Development.  I specialize in Object Oriented Programming, but no matter the language, I just like to 
 						make fun things.  Check out my GitHub!</p>
 					</div>
-					<div className="col-1">
+					<div className="col-1" id="codeLangs">
 						<h3>Languages:</h3>
 						<ul>
 							<li>C++</li>
@@ -71,7 +71,9 @@ class CodePage extends React.Component {
 							<li>CSS</li>	
 							<li>Java</li>
 						</ul>
-						<a href="https://www.github.com/noahkittleson" target="_blank" className="App-link">My GitHub</a>
+						<div id="github-link">
+							<a href="https://www.github.com/noahkittleson" target="_blank" className="App-link">My GitHub</a>
+						</div>
 					</div>
 				</div>
 			</div>

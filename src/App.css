@@ -1,12 +1,7 @@
 .App {
   text-align: center;
+  /*font-family: */
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
 
 /* The animation code */
 @keyframes slideIn {
@@ -52,6 +47,10 @@
 .App-link {
   color: #61dafb;
 }
+
+/*div {
+  outline: solid blue 1px;
+}*/
 
 @keyframes App-logo-spin {
   from {
@@ -115,12 +114,32 @@ a:hover {
 
 #code {
   background-color: #FFE5B5;
-/*  align-items: left;
-  justify-content: left;
-  text-align: left;*/
   justify-content: center;
   align-items: center;
+  text-align: left;
+}
+
+.codeImg {
+  margin-top: 20px;
+}
+
+#codeText {
+  margin-left: 20px;
+}
+
+#github-link {
+  margin-top: 20px;
+  background-color: #424555;
   text-align: center;
+  font-size: 30px;
+  padding: 5px;
+  position: absolute;
+  height: 40px;
+  overflow: hidden;
+  /*this is kinda a hack but I don't care...*/
+  left: 83.33%;
+  bottom: 0;
+  right: 0;
 }
 
 img {
@@ -159,7 +178,6 @@ ul {
 .grid-container{
   width: 100%; 
   max-width: 1500px;
-  text-align:center;
   margin:0 auto;
 }
 
