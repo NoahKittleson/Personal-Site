@@ -21,7 +21,6 @@
   height: 100%;
   position: relative;
   animation-duration: 1s;
-  /*animation-timing-function: linear;*/
   animation-timing-function: cubic-bezier(.5,.2,.9,.6);
 }
 
@@ -67,6 +66,10 @@ a:link {
   text-decoration: none;
 }
 
+a:visited {
+  color: #C95934;
+}
+
 a:hover {
   size: 15px;
   color: #C95934;
@@ -75,8 +78,7 @@ a:hover {
 .link {
   color: #BC5331;
   text-align: center;
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 .nav-box {
@@ -112,7 +114,29 @@ a:hover {
 }
 
 #code {
-  background-color: red;
+  background-color: #FFE5B5;
+/*  align-items: left;
+  justify-content: left;
+  text-align: left;*/
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+h3 {
+  text-align: left;
+  color: #424555;
+  margin: 10px;
+  padding: 0px;
+}
+
+ul {
+  list-style-type: none;
+  text-align: left;
 }
 
 #art {
@@ -130,6 +154,42 @@ a:hover {
 #landing {
   background-color: rgba(250,250,250,0.4);
 }
+
+/*Stuff for Columns*/
+.grid-container{
+  width: 100%; 
+  max-width: 1500px;
+  text-align:center;
+  margin:0 auto;
+}
+
+/*-- our cleafix hack -- */ 
+.row:before, 
+.row:after {
+  content:"";
+  display: table ;
+  clear: both;
+}
+
+[class*='col-'] {
+  float: left; 
+  /*min-height: 1px; */
+  height: 100%;
+  width: 16.66%; 
+  /*-- our gutter -- */
+  padding: 12px; 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.col-1{ width: 16.66%; }
+.col-2{ width: 33.33%; }
+.col-3{ width: 50%;    }
+.col-4{ width: 66.66%; }
+.col-5{ width: 83.33%; }
+.col-6{ width: 100%;   }
+
 
 
 
