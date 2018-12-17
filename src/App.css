@@ -146,7 +146,7 @@ img {
   width: 100%;
 }
 
-h3 {
+.heading {
   text-align: left;
   color: #424555;
   margin: 10px;
@@ -159,15 +159,15 @@ ul {
 }
 
 #art {
-  background-color: black;
+  background-color: #94b894
 }
 
 #games {
-  background-color: blue;
+  background-color: #669999;
 }
 
 #words {
-  background-color: purple;
+  background-color: #cc3300
 }
 
 #landing {
