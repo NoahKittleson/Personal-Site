@@ -90,19 +90,13 @@ class ArtPage extends React.Component {
 						<img src={codeImg} alt="A picture of the code for this webpage."/>
 					</div>
 					<div className="col-3">
-						<h2>About My Art:</h2>
-						<p id="codeText">I started doing pixel art a several years ago, mainly because I was not good at traditional art and
-							hoped that I could hide it behind an enforced low resolution.</p>
+						<h2 className="heading">About My Art:</h2>
+						<p id="codeText">I started doing pixel art in 2017, mainly because I was not good at traditional art and
+							hoped that I could hide it behind an enforced low resolution.  Turns out I really liked pixel art, and 
+							animation especially.  Plus it's a useful skill to have for an aspiring game developer.</p>
 					</div>
 					<div className="col-1" id="codeLangs">
-						<h3>Languages:</h3>
-						<ul>
-							<li>C++</li>
-							<li>JavaScript</li>
-							<li>HTML</li>
-							<li>CSS</li>	
-							<li>Java</li>
-						</ul>
+						what should I put here?
 						<div id="github-link">
 							<a href="https://www.github.com/noahkittleson" target="_blank" className="App-link">My GitHub</a>
 						</div>
