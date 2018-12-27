@@ -158,8 +158,13 @@ ul {
   text-align: left;
 }
 
+#artText {
+  margin-left: 20px;
+  text-align: left;
+}
+
 #art {
-  background-color: #75a375
+  background-color: #819881;
 }
 
 #games {
@@ -167,7 +172,7 @@ ul {
 }
 
 #words {
-  background-color: #cc3300
+  background-color: #e48767;
 }
 
 #landing {

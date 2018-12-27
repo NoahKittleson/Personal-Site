@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import codeImg from './Code.png'
-import artImg from './Guernica.png'
+import artImg from './Guernica5.png'
 import './App.css';
 
 class NavLinks extends React.Component {
@@ -88,14 +88,41 @@ class ArtPage extends React.Component {
 			<div class="grid-container outline">
 				<div class= "row">
 					<div className="col-2 codeImg">
+						<img src={artImg} alt="Pixel art Guernica"/>
+						<p>(My adaptation, but not my art.)</p>
+					</div>
+					<div className="col-3">
+						<h2 className="heading">About My Art:</h2>
+						<p id="artText">I started doing pixel art in 2017, mainly because I was not good at traditional art and
+							hoped that I could hide it behind a mandatory low resolution.  All things told, I think that
+
+							Turns out I really liked pixel art, and 
+							animation especially.  Plus it's a useful skill to have for an aspiring game developer.</p>
+					</div>
+					<div className="col-1" id="codeLangs">
+						what should I put here?
+						<div id="github-link">
+							<a href="https://www.github.com/noahkittleson" target="_blank" className="App-link">My ArtStation</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	}
+}
+
+class GamePage extends React.Component {
+	render() {
+		return <div className="body" id="games">
+			<div class="grid-container outline">
+				<div class= "row">
+					<div className="col-2 codeImg">
 						<img src={artImg} alt="A picture of the code for this webpage."/>
 						<p>(My adaptation, but not my art.)</p>
 					</div>
 					<div className="col-3">
 						<h2 className="heading">About My Art:</h2>
-						<p id="codeText">I started doing pixel art in 2017, mainly because I was not good at traditional art and
-							hoped that I could hide it behind an enforced low resolution.  Turns out I really liked pixel art, and 
-							animation especially.  Plus it's a useful skill to have for an aspiring game developer.</p>
+						<p id="codeText">This is the page about the game what that I'm making.</p>
 					</div>
 					<div className="col-1" id="codeLangs">
 						what should I put here?
@@ -109,18 +136,27 @@ class ArtPage extends React.Component {
 	}
 }
 
-class GamePage extends React.Component {
-	render() {
-		return <div className="body" id="games">
-			<p>This is the Game Page</p>
-		</div>
-	}
-}
-
 class WordPage extends React.Component {
 	render() {
 		return <div className="body" id="words">
-			<p>This is the Words Page</p>
+			<div class="grid-container outline">
+				<div class= "row">
+					<div className="col-2 codeImg">
+						<img src={artImg} alt="A picture of the code for this webpage."/>
+						<p>(My adaptation, but not my art.)</p>
+					</div>
+					<div className="col-3">
+						<h2 className="heading">About My Art:</h2>
+						<p id="codeText">And this is a page about the stuff that I've written.</p>
+					</div>
+					<div className="col-1" id="codeLangs">
+						what should I put here?
+						<div id="github-link">
+							<a href="https://www.github.com/noahkittleson" target="_blank" className="App-link">My GitHub</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	}
 }
