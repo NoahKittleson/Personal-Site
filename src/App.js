@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
-import codeImg from './Code.png'
-import artImg from './Guernica5.png'
+import codeImg from './Images/Code.png'
+import artImg from './Images/Guernica5.png'
+import gameImg from './Images/Screenshot3.png'
 import './App.css';
 
 class NavLinks extends React.Component {
@@ -89,7 +90,7 @@ class ArtPage extends React.Component {
 				<div class= "row">
 					<div className="col-2 codeImg">
 						<img src={artImg} alt="Pixel art Guernica"/>
-						<p>(My adaptation, but not my art.)</p>
+						<p class= "disclaimer">(My adaptation, but not my art.)</p>
 					</div>
 					<div className="col-3">
 						<h2 className="heading">About My Art:</h2>
@@ -117,8 +118,7 @@ class GamePage extends React.Component {
 			<div class="grid-container outline">
 				<div class= "row">
 					<div className="col-2 codeImg">
-						<img src={artImg} alt="A picture of the code for this webpage."/>
-						<p>(My adaptation, but not my art.)</p>
+						<img src={gameImg} alt="A picture of the code for this webpage."/>
 					</div>
 					<div className="col-3">
 						<h2 className="heading">About My Art:</h2>
@@ -143,7 +143,6 @@ class WordPage extends React.Component {
 				<div class= "row">
 					<div className="col-2 codeImg">
 						<img src={artImg} alt="A picture of the code for this webpage."/>
-						<p>(My adaptation, but not my art.)</p>
 					</div>
 					<div className="col-3">
 						<h2 className="heading">About My Art:</h2>
