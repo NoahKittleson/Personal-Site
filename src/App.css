@@ -119,20 +119,21 @@ a:hover {
   text-align: left;
 }
 
-.codeImg {
+.topic-img {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .disclaimer {
   margin: 0px;
+  margin-top: 0px;
   padding: 0px;
-  font-size: 10px;
-  border: solid 1px black;
+  font-size: 12px;
 }
 
-#codeText {
+.center-text {
   margin-left: 20px;
+  text-align: left;
 }
 
 #github-link {
@@ -154,6 +155,14 @@ img {
   width: 100%;
 }
 
+#art h2 {
+  color: #2e382e;
+}
+
+#words img {
+  border: solid 2px black;
+}
+
 .heading {
   text-align: left;
   color: #424555;
@@ -166,21 +175,22 @@ ul {
   text-align: left;
 }
 
-#artText {
-  margin-left: 20px;
-  text-align: left;
-}
-
 #art {
   background-color: #819881;
 }
 
 #games {
   background-color: #669999;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
 }
 
 #words {
   background-color: #e48767;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
 }
 
 #landing {

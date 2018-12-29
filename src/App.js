@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 import codeImg from './Images/Code.png'
 import artImg from './Images/Guernica5.png'
 import gameImg from './Images/Screenshot3.png'
+import reclineImg from './Images/RecliningMan.png'
+import wordsImg from './Images/words-img.png'
+
 import './App.css';
 
 class NavLinks extends React.Component {
@@ -54,12 +57,12 @@ class CodePage extends React.Component {
 		return <div className="body" id="code">
 			<div class="grid-container outline">
 				<div class= "row">
-					<div className="col-2 codeImg">
+					<div className="col-2 topic-img">
 						<img src={codeImg} alt="A picture of the code for this webpage."/>
 					</div>
 					<div className="col-3">
 						<h2 className="heading">About Me:</h2>
-						<p id="codeText">I am a Junior Web and Software Developer living in Portland, Oregon.  In 2014, I started by teaching myself 
+						<p className="center-text">I am a Junior Web and Software Developer living in Portland, Oregon.  In 2014, I started by teaching myself 
 						programming in C++, and in 2016 I enrolled in <a href="https://www.epicodus.com/">Epicodus</a> to get training 
 						in Web Development.  I specialize in Object Oriented Programming, but no matter the language, I just like to 
 						make fun things.  Check out my GitHub!</p>
@@ -88,13 +91,13 @@ class ArtPage extends React.Component {
 		return <div className="body" id="art">
 			<div class="grid-container outline">
 				<div class= "row">
-					<div className="col-2 codeImg">
+					<div className="col-2 topic-img">
 						<img src={artImg} alt="Pixel art Guernica"/>
-						<p class= "disclaimer">(My adaptation, but not my art.)</p>
+						<p class= "disclaimer">If you like the way this looks don't thank me, thank Picasso</p>
 					</div>
 					<div className="col-3">
 						<h2 className="heading">About My Art:</h2>
-						<p id="artText">I started doing pixel art in 2017, mainly because I was not good at traditional art and
+						<p className="center-text">I started doing pixel art in 2017, mainly because I was not good at traditional art and
 							hoped that I could hide it behind a mandatory low resolution.  All things told, I think that
 
 							Turns out I really liked pixel art, and 
@@ -117,17 +120,20 @@ class GamePage extends React.Component {
 		return <div className="body" id="games">
 			<div class="grid-container outline">
 				<div class= "row">
-					<div className="col-2 codeImg">
+					<div className="col-2 topic-img">
 						<img src={gameImg} alt="A picture of the code for this webpage."/>
 					</div>
 					<div className="col-3">
-						<h2 className="heading">About My Art:</h2>
-						<p id="codeText">This is the page about the game what that I'm making.</p>
+						<h2 className="heading">About My Game:</h2>
+						<p className="center-text">Ever since I was a kid I've been playing games.  Board games, video games, flash games, tabletop games,
+							It didn't matter.  In 2014, after graduating from college, I decided to take the plunge and teach myself 
+							programming so that I could finally try my own hand at making video games.  Ever since I've been working on building my
+							own turn-based RPG Engine from scratch.</p>
 					</div>
 					<div className="col-1" id="codeLangs">
-						what should I put here?
+						<img src={reclineImg} alt="a reclining man" />
 						<div id="github-link">
-							<a href="https://www.github.com/noahkittleson" target="_blank" className="App-link">My GitHub</a>
+							<a href="https://github.com/noahkittleson/RPG-engine" target="_blank" className="App-link">My Game</a>
 						</div>
 					</div>
 				</div>
@@ -141,12 +147,12 @@ class WordPage extends React.Component {
 		return <div className="body" id="words">
 			<div class="grid-container outline">
 				<div class= "row">
-					<div className="col-2 codeImg">
-						<img src={artImg} alt="A picture of the code for this webpage."/>
+					<div className="col-2 topic-img">
+						<img src={wordsImg} alt="A picture of the code for this webpage."/>
 					</div>
 					<div className="col-3">
-						<h2 className="heading">About My Art:</h2>
-						<p id="codeText">And this is a page about the stuff that I've written.</p>
+						<h2 className="blehhh">About My Words:</h2>
+						<p className="center-text">And this is a page about the stuff that I've written.</p>
 					</div>
 					<div className="col-1" id="codeLangs">
 						what should I put here?
