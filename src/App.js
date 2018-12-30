@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import codeImg from './Images/Code.png'
-import artImg from './Images/Guernica5.png'
+import artImg from './Images/Guernica6.png'
 import gameImg from './Images/Screenshot3.png'
 import reclineImg from './Images/RecliningMan.png'
 import wordsImg from './Images/words-img.png'
@@ -92,7 +92,7 @@ class ArtPage extends React.Component {
 			<div class="grid-container outline">
 				<div class= "row">
 					<div className="col-2 topic-img">
-						<img src={artImg} alt="Pixel art Guernica"/>
+						<img src={artImg} alt="Pixel art Guernica"  className="img-border"/>
 						<p class= "disclaimer">If you like the way this looks don't thank me, thank Picasso</p>
 					</div>
 					<div className="col-3">
@@ -121,7 +121,7 @@ class GamePage extends React.Component {
 			<div class="grid-container outline">
 				<div class= "row">
 					<div className="col-2 topic-img">
-						<img src={gameImg} alt="A picture of the code for this webpage."/>
+						<img src={gameImg} alt="A picture of the code for this webpage." className="img-border" />
 					</div>
 					<div className="col-3">
 						<h2 className="heading">About My Game:</h2>
@@ -131,7 +131,7 @@ class GamePage extends React.Component {
 							own turn-based RPG Engine from scratch.</p>
 					</div>
 					<div className="col-1" id="codeLangs">
-						<img src={reclineImg} alt="a reclining man" />
+						<img src={reclineImg} alt="just a relaxed dude" />
 						<div id="github-link">
 							<a href="https://github.com/noahkittleson/RPG-engine" target="_blank" className="App-link">My Game</a>
 						</div>
@@ -148,11 +148,13 @@ class WordPage extends React.Component {
 			<div class="grid-container outline">
 				<div class= "row">
 					<div className="col-2 topic-img">
-						<img src={wordsImg} alt="A picture of the code for this webpage."/>
+						<img src={wordsImg} alt="A picture of the code for this webpage." className="img-border"/>
 					</div>
 					<div className="col-3">
 						<h2 className="blehhh">About My Words:</h2>
-						<p className="center-text">And this is a page about the stuff that I've written.</p>
+						<p className="center-text">I write short stories sometimes.  Usually about whatever dumb ideas I think of.  I like Kurt Vonnegut and Gabriel Garcia
+						Marquez a lot, so I try to imitate their style.  When I was in college my creative writing teacher said that over the course of the year he had 
+						become a "Reluctant Fan" of my  writing.  To this day it is my favorite piece of praise I have ever received.</p>
 					</div>
 					<div className="col-1" id="codeLangs">
 						what should I put here?

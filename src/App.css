@@ -159,8 +159,13 @@ img {
   color: #2e382e;
 }
 
-#words img {
-  border: solid 2px black;
+.outline {
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+}
+
+.img-border {
+  border: solid 2px #394639;
 }
 
 .heading {
