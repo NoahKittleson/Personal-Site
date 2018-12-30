@@ -159,7 +159,13 @@ class WordPage extends React.Component {
 					</div>
 					<div className="col-1" id="codeLangs">
 						<p className="blurb">Here are a couple things I wrote:</p>
-						<a href={GatstonPdf} target="_blank" className="App-link">My Story</a>
+						<div className="story-link">
+							<a href={GatstonPdf} target="_blank" className="App-link">The Mysterious Case of Bill Gatston - Part 1</a>
+						</div>
+						<br/>
+						<div className="story-link">
+							<a href={GatstonPdf} target="_blank" className="App-link">Not with a Bang</a>
+						</div>
 					</div>
 				</div>
 			</div>
