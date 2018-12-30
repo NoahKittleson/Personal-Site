@@ -5,6 +5,7 @@ import artImg from './Images/Guernica6.png'
 import gameImg from './Images/Screenshot3.png'
 import reclineImg from './Images/RecliningMan.png'
 import wordsImg from './Images/words-img.png'
+import GatstonPdf from './The Mysterious Case of Bill Gatston.pdf'
 
 import './App.css';
 
@@ -151,16 +152,14 @@ class WordPage extends React.Component {
 						<img src={wordsImg} alt="A picture of the code for this webpage." className="img-border"/>
 					</div>
 					<div className="col-3">
-						<h2 className="blehhh">About My Words:</h2>
-						<p className="center-text">I write short stories sometimes.  Usually about whatever dumb ideas I think of.  I like Kurt Vonnegut and Gabriel Garcia
-						Marquez a lot, so I try to imitate their style.  When I was in college my creative writing teacher said that over the course of the year he had 
-						become a "Reluctant Fan" of my  writing.  To this day it is my favorite piece of praise I have ever received.</p>
+						<h2 className="heading">About My Words:</h2>
+						<p className="center-text">I write short stoires and unfinished segments of long stories. In college my creative writing professor said that he was 
+						a "Reluctant Fan" of my writing.  It is my favorite piece of praise I have ever received.  Sometimes I wonder if I would write more often and more 
+						diligently if I hadn't already received the most perfect compliment.</p>
 					</div>
 					<div className="col-1" id="codeLangs">
-						what should I put here?
-						<div id="github-link">
-							<a href="https://www.github.com/noahkittleson" target="_blank" className="App-link">My GitHub</a>
-						</div>
+						<p className="blurb">Here are a couple things I wrote:</p>
+						<a href={GatstonPdf} target="_blank" className="App-link">My Story</a>
 					</div>
 				</div>
 			</div>

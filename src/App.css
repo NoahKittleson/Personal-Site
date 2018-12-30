@@ -159,6 +159,21 @@ img {
   color: #2e382e;
 }
 
+#words h2 {
+  color: #6c2913;
+}
+
+#games h2 {
+  color: #293d3d;
+}
+
+.blurb {
+  font-size: 20px;
+  width: 100%;
+  color: #6c2913;
+  margin-top: 0px;
+}
+
 .outline {
   border-top: solid 2px black;
   border-bottom: solid 2px black;
