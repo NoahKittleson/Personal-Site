@@ -62,7 +62,7 @@ class CodePage extends React.Component {
 						<img src={codeImg} alt="A picture of the code for this webpage."/>
 					</div>
 					<div className="col-3">
-						<h2 className="heading">About Me:</h2>
+						<h2 className="heading">About My Code:</h2>
 						<p className="center-text">I am a Junior Web and Software Developer living in Portland, Oregon.  In 2014, I started by teaching myself 
 						programming in C++, and in 2016 I enrolled in <a href="https://www.epicodus.com/">Epicodus</a> to get training 
 						in Web Development.  I specialize in Object Oriented Programming, but no matter the language, I just like to 
@@ -132,9 +132,9 @@ class GamePage extends React.Component {
 							own turn-based RPG Engine from scratch.</p>
 					</div>
 					<div className="col-1" id="codeLangs">
-						<img src={reclineImg} alt="just a relaxed dude" />
-						<div id="github-link">
-							<a href="https://github.com/noahkittleson/RPG-engine" target="_blank" className="App-link">My Game</a>
+						<img src={reclineImg} alt="just a relaxed dude" className="test"/>
+						<div id="game-link">
+							<b><a href="https://github.com/noahkittleson/RPG-engine" target="_blank" className="App-link">My Game</a></b>
 						</div>
 					</div>
 				</div>
@@ -158,7 +158,7 @@ class WordPage extends React.Component {
 						diligently if I hadn't already received the most perfect compliment.</p>
 					</div>
 					<div className="col-1" id="codeLangs">
-						<p className="blurb">Here are a couple things I wrote:</p>
+						<p className="blurb"><b>Here are a couple things I wrote:</b></p>
 						<div className="story-link">
 							<a href={GatstonPdf} target="_blank" className="App-link">The Mysterious Case of Bill Gatston - Part 1</a>
 						</div>
