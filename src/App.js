@@ -6,6 +6,7 @@ import gameImg from './Images/Screenshot3.png'
 import reclineImg from './Images/RecliningMan.png'
 import wordsImg from './Images/words-img.png'
 import GatstonPdf from './The Mysterious Case of Bill Gatston.pdf'
+import ArtstationLogo from './Images/Artstation.png'
 
 import './App.css';
 
@@ -105,6 +106,7 @@ class ArtPage extends React.Component {
 							animation especially.  Plus it's a useful skill to have for an aspiring game developer.</p>
 					</div>
 					<div className="col-1" id="codeLangs">
+						<img src={ArtstationLogo} alt="Artstation Logo"/>
 						<div id="github-link">
 							<a href="https://www.github.com/noahkittleson" target="_blank" className="App-link">My ArtStation</a>
 						</div>
