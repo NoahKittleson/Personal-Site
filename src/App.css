@@ -132,7 +132,7 @@ a:hover {
   margin: 0px;
   margin-top: 0px;
   padding: 0px;
-  font-size: 12px;
+  font-size: 17px;
 }
 
 .center-text {
@@ -153,6 +153,12 @@ a:hover {
   left: 83.33%;
   bottom: 0;
   right: 0;
+}
+
+#art #github-link {
+  height: 60px;
+  line-height: 60px;
+  font-size: 25px;
 }
 
 #game-link {
