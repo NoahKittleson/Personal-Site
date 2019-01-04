@@ -108,7 +108,7 @@ class ArtPage extends React.Component {
 					<div className="col-1" id="codeLangs">
 						<img src={ArtstationLogo} alt="Artstation Logo"/>
 						<div id="github-link">
-							<a href="https://www.github.com/noahkittleson" target="_blank" className="App-link">My ArtStation</a>
+							<a href="https://www.artstation.com/noahkittleson" target="_blank" className="App-link">My ArtStation</a>
 						</div>
 					</div>
 				</div>
