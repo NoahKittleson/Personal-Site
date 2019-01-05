@@ -6,7 +6,8 @@ import gameImg from './Images/Screenshot3.png'
 import reclineImg from './Images/RecliningMan.png'
 import wordsImg from './Images/words-img.png'
 import GatstonPdf from './The Mysterious Case of Bill Gatston.pdf'
-import ArtstationLogo from './Images/Artstation.png'
+import EaselImg from './Images/Art Easel.png'
+
 
 import './App.css';
 
@@ -48,7 +49,7 @@ class LandingPage extends React.Component {
 	render() {
 	  return <div id="landing">
 		  <h1> Hi, I'm <br/> <span className="my-zone"> Noah Kittleson. </span> </h1>
-		  <p>Click on any of the corners to learn more about me</p>
+		  <p>Click on any of the corners to learn more .</p>
     </div>
 	}
 }
@@ -106,9 +107,9 @@ class ArtPage extends React.Component {
 							animation especially.  Plus it's a useful skill to have for an aspiring game developer.</p>
 					</div>
 					<div className="col-1" id="codeLangs">
-						<img src={ArtstationLogo} alt="Artstation Logo"/>
+						<img src={EaselImg} alt="Artstation Logo"/>
 						<div id="github-link">
-							<a href="https://www.artstation.com/noahkittleson" target="_blank" className="App-link">My ArtStation</a>
+							<a href="https://www.deviantart.com/noahkittleson" target="_blank" className="App-link">My Art Portfolio</a>
 						</div>
 					</div>
 				</div>
