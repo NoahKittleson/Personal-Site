@@ -65,9 +65,10 @@ class CodePage extends React.Component {
 					<div className="col-3">
 						<h2 className="heading">About My Code:</h2>
 						<p className="center-text">I am a Junior Web and Software Developer living in Portland, Oregon.  In 2014, I started by teaching myself 
-						programming in C++, and in 2016 I enrolled in <a href="https://www.epicodus.com/">Epicodus</a> to get training 
-						in Web Development.  I specialize in Object Oriented Programming, but no matter the language, I just like to 
-						make fun things.  Check out my GitHub!</p>
+						programming in C++.  In 2016 I enrolled in <a href="https://www.epicodus.com/">Epicodus</a>.  I specialize in Object Oriented Programming, 
+						but no matter the language, I just want to make things.  If you want to pay me to make things,  
+						<a href = "mailto:noahkittleson@gmail.com?subject=Make%20me%20a%20thing"> you can</a>.  If you want an idea of what I can do, check out my 
+						<a href="https://www.github.com/noahkittleson" target="_blank" className="App-link"> GitHub</a> (or the rest of this site).</p>
 					</div>
 					<div className="col-1" id="codeLangs">
 						<h3 className="heading">Languages:</h3>
@@ -101,13 +102,11 @@ class ArtPage extends React.Component {
 					<div className="col-3">
 						<h2 className="heading">About My Art:</h2>
 						<p className="center-text">I started doing pixel art in 2017, mainly because I was not good at traditional art and
-							hoped that I could hide it behind a mandatory low resolution.  All things told, I think that
-
-							Turns out I really liked pixel art, and 
-							animation especially.  Plus it's a useful skill to have for an aspiring game developer.</p>
+							hoped that I could hide it behind a mandatory low resolution.  I don't feel like I've gotten significantly better at art, but I
+							<i>do</i> feel that I've gotten better at hiding the fact that I'm bad at art.  Is that the same thing?</p>
 					</div>
 					<div className="col-1" id="codeLangs">
-						<img src={EaselImg} alt="Artstation Logo"/>
+						<img src={EaselImg} alt="An art Easel"/>
 						<div id="github-link">
 							<a href="https://www.deviantart.com/noahkittleson" target="_blank" className="App-link">My Art Portfolio</a>
 						</div>
@@ -128,6 +127,10 @@ class GamePage extends React.Component {
 					</div>
 					<div className="col-3">
 						<h2 className="heading">About My Game:</h2>
+						<p className="center-text">I'm building a video game.  What's it about?  I'm not sure yet.  But I do know it'll be a turn-based RPG, 
+						and that it'll be story focused. Right now I'm building out the engine and trying to get all the various systems in place.</p>
+
+
 						<p className="center-text">Ever since I was a kid I've been playing games.  Board games, video games, flash games, tabletop games,
 							It didn't matter.  In 2014, after graduating from college, I decided to take the plunge and teach myself 
 							programming so that I could finally try my own hand at making video games.  Ever since I've been working on building my
