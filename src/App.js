@@ -128,13 +128,9 @@ class GamePage extends React.Component {
 					<div className="col-3">
 						<h2 className="heading">About My Game:</h2>
 						<p className="center-text">I'm building a video game.  What's it about?  I'm not sure yet.  But I do know it'll be a turn-based RPG, 
-						and that it'll be story focused. Right now I'm building out the engine and trying to get all the various systems in place.</p>
-
-
-						<p className="center-text">Ever since I was a kid I've been playing games.  Board games, video games, flash games, tabletop games,
-							It didn't matter.  In 2014, after graduating from college, I decided to take the plunge and teach myself 
-							programming so that I could finally try my own hand at making video games.  Ever since I've been working on building my
-							own turn-based RPG Engine from scratch.</p>
+						and that it'll be story focused. Right now I'm building out the engine and trying to get all the various systems in place.  The audio, 
+						the battle systems, the dialogue trees, all that.  I've spent the last four years building the engine, now that I'm almost done I 
+						don't even know what to put in it.  Go figure, huh?</p>
 					</div>
 					<div className="col-1" id="codeLangs">
 						<img src={reclineImg} alt="just a relaxed dude" className="test"/>
