@@ -5,8 +5,9 @@ import artImg from './Images/Guernica6.png'
 import gameImg from './Images/Screenshot3.png'
 import reclineImg from './Images/RecliningMan.png'
 import wordsImg from './Images/words-img.png'
-import GatstonPdf from './The Mysterious Case of Bill Gatston.pdf'
 import EaselImg from './Images/Art Easel.png'
+import GatstonPdf from './The Mysterious Case of Bill Gatston.pdf'
+import BriePdf from './It\'s an Acquired Taste.pdf'
 
 
 import './App.css';
@@ -161,11 +162,11 @@ class WordPage extends React.Component {
 					<div className="col-1" id="codeLangs">
 						<p className="blurb"><b>Here are a couple things I wrote:</b></p>
 						<div className="story-link">
-							<a href={GatstonPdf} target="_blank" className="App-link">The Mysterious Case of Bill Gatston - Part 1</a>
+							<a href={BriePdf} target="_blank" className="App-link">It's an Acquired Taste</a>
 						</div>
 						<br/>
 						<div className="story-link">
-							<a href={GatstonPdf} target="_blank" className="App-link">Not with a Bang</a>
+							<a href={GatstonPdf} target="_blank" className="App-link">The Mysterious Case of Bill Gatston - Part 1</a>
 						</div>
 					</div>
 				</div>
