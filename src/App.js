@@ -32,8 +32,8 @@ class LandingPage extends React.Component {
 class CodePage extends React.Component {
 	render() {
 		return <div className="body" id="code">
-			<div class="grid-container outline">
-				<div class= "row">
+			<div className="grid-container outline">
+				<div className= "row">
 					<div className="col-2 topic-img">
 						<img src={codeImg} alt="The code for this webpage."/>
 					</div>
@@ -68,11 +68,11 @@ class CodePage extends React.Component {
 class ArtPage extends React.Component {
 	render() {
 		return <div className="body" id="art">
-			<div class="grid-container outline">
-				<div class= "row">
+			<div className="grid-container outline">
+				<div className= "row">
 					<div className="col-2 topic-img">
 						<img src={artImg} alt="Pixel art Guernica"  className="img-border"/>
-						<p class= "disclaimer">Pixel Guernica</p>
+						<p className= "disclaimer">Pixel Guernica</p>
 					</div>
 					<div className="col-3">
 						<h2 className="heading">About My Art:</h2>
@@ -95,8 +95,8 @@ class ArtPage extends React.Component {
 class GamePage extends React.Component {
 	render() {
 		return <div className="body" id="games">
-			<div class="grid-container outline">
-				<div class= "row">
+			<div className="grid-container outline">
+				<div className= "row">
 					<div className="col-2 topic-img">
 						<img src={gameImg} alt="Screenshot of my game." className="img-border" />
 					</div>
@@ -122,8 +122,8 @@ class GamePage extends React.Component {
 class WordPage extends React.Component {
 	render() {
 		return <div className="body" id="words">
-			<div class="grid-container outline">
-				<div class= "row">
+			<div className="grid-container outline">
+				<div className= "row">
 					<div className="col-2 topic-img">
 						<img src={wordsImg} alt="the creative process" className="img-border"/>
 					</div>
@@ -165,7 +165,7 @@ class App extends Component {
   		this.setState(state => ({
 				index: number
 			}));
-			console.log("called with value: " + number);
+			console.log("body changed: " + number);
   	}
 
   render() {
