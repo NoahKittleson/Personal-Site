@@ -15,34 +15,8 @@ import './App.css';
 class NavLinks extends React.Component {
 	render() {
 		return <div id={this.props.class} className="nav-box">
-		<h1>
-			<a className="link" href="#" onClick={() => this.props.callback(this.props.index)}> {this.props.text} </a>
-			</h1>
+			<button className="fake-link" onClick={() => this.props.callback(this.props.index)}> {this.props.text} </button>
 		</div>
-	}
-}
-
-class Toggle extends React.Component {
-	constructor (props) {
-		super(props);
-		this.state = {isToggleOn: true };
-		//this is necessary to make this a function that can change state of the class
-		//unbounded functions are unable to modify the state of the class because JS is dumb and member functions
-		//aren't functions that have any connection to the class itself, they more just use it as a namespace.
-		//... or you could put handleClick = () => {/definition/}.  Although this seems more explicit.	
-		this.handleClick = this.handleClick.bind(this);
-	}
-
-	handleClick () {
-		this.setState(state => ({
-			isToggleOn: !state.isToggleOn
-		}));
-	}
-
-	render () {
-		return <button onClick = {this.handleClick}> 
-			{this.state.isToggleOn ? 'YES' : 'NO'}
-		</button>
 	}
 }
 
@@ -61,7 +35,7 @@ class CodePage extends React.Component {
 			<div class="grid-container outline">
 				<div class= "row">
 					<div className="col-2 topic-img">
-						<img src={codeImg} alt="A picture of the code for this webpage."/>
+						<img src={codeImg} alt="The code for this webpage."/>
 					</div>
 					<div className="col-3">
 						<h2 className="heading">About My Code:</h2>
@@ -69,7 +43,7 @@ class CodePage extends React.Component {
 						programming in C++.  In 2016 I enrolled in <a href="https://www.epicodus.com/">Epicodus</a>.  I specialize in Object Oriented Programming, 
 						but no matter the language, I just want to make things.  If you want to pay me to make things,  
 						<a href = "mailto:noahkittleson@gmail.com?subject=Make%20me%20a%20thing"> you can</a>.  If you want an idea of what I can do, check out my 
-						<a href="https://www.github.com/noahkittleson" target="_blank" className="App-link"> GitHub</a> (or the rest of this site).</p>
+						<a href="https://www.github.com/noahkittleson" target="_blank" rel="noopener noreferrer" className="App-link"> GitHub</a> (or the rest of this site).</p>
 					</div>
 					<div className="col-1" id="codeLangs">
 						<h3 className="heading">Languages:</h3>
@@ -82,7 +56,7 @@ class CodePage extends React.Component {
 							<li>C#</li>
 						</ul>
 						<div id="github-link">
-							<a href="https://www.github.com/noahkittleson" target="_blank" className="App-link">My GitHub</a>
+							<a href="https://www.github.com/noahkittleson" target="_blank" rel="noopener noreferrer" className="App-link">My GitHub</a>
 						</div>
 					</div>
 				</div>
@@ -109,7 +83,7 @@ class ArtPage extends React.Component {
 					<div className="col-1" id="codeLangs">
 						<img src={EaselImg} alt="An art Easel"/>
 						<div id="github-link">
-							<a href="https://www.deviantart.com/noahkittleson" target="_blank" className="App-link">My Art Portfolio</a>
+							<a href="https://www.deviantart.com/noahkittleson" target="_blank" rel="noopener noreferrer" className="App-link">My Art Portfolio</a>
 						</div>
 					</div>
 				</div>
@@ -124,7 +98,7 @@ class GamePage extends React.Component {
 			<div class="grid-container outline">
 				<div class= "row">
 					<div className="col-2 topic-img">
-						<img src={gameImg} alt="A picture of the code for this webpage." className="img-border" />
+						<img src={gameImg} alt="Screenshot of my game." className="img-border" />
 					</div>
 					<div className="col-3">
 						<h2 className="heading">About My Game:</h2>
@@ -136,7 +110,7 @@ class GamePage extends React.Component {
 					<div className="col-1" id="codeLangs">
 						<img src={reclineImg} alt="just a relaxed dude" className="test"/>
 						<div id="game-link">
-							<b><a href="https://github.com/noahkittleson/RPG-engine" target="_blank" className="App-link">My Game</a></b>
+							<b><a href="https://github.com/noahkittleson/RPG-engine" target="_blank" rel="noopener noreferrer" className="App-link">My Game</a></b>
 						</div>
 					</div>
 				</div>
@@ -151,7 +125,7 @@ class WordPage extends React.Component {
 			<div class="grid-container outline">
 				<div class= "row">
 					<div className="col-2 topic-img">
-						<img src={wordsImg} alt="A picture of the code for this webpage." className="img-border"/>
+						<img src={wordsImg} alt="the creative process" className="img-border"/>
 					</div>
 					<div className="col-3">
 						<h2 className="heading">About My Words:</h2>
@@ -162,11 +136,11 @@ class WordPage extends React.Component {
 					<div className="col-1" id="codeLangs">
 						<p className="blurb"><b>Here are a couple things I wrote:</b></p>
 						<div className="story-link">
-							<a href={BriePdf} target="_blank" className="App-link">It's an Acquired Taste</a>
+							<a href={BriePdf} target="_blank" rel="noopener noreferrer" className="App-link">It's an Acquired Taste</a>
 						</div>
 						<br/>
 						<div className="story-link">
-							<a href={GatstonPdf} target="_blank" className="App-link">The Mysterious Case of Bill Gatston - Part 1</a>
+							<a href={GatstonPdf} target="_blank" rel="noopener noreferrer" className="App-link">The Mysterious Case of Bill Gatston - Part 1</a>
 						</div>
 					</div>
 				</div>

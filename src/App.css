@@ -80,10 +80,28 @@ a:hover {
   color: #d06a49;
 }
 
-.link {
-  color: #BC5331;
+.fake-link {
+  color: #C95934;
   text-align: center;
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+button {
+  border: none;
+  height: 100%;
+  width: 100%;
+  padding: .67em 0;
+  background-color: rgba(0,0,0,0);
+}
+
+button:hover {
+  color: #d06a49;
+}
+
+button:focus {
+  outline: 0;
 }
 
 .nav-box {
