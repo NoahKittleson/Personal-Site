@@ -129,7 +129,7 @@ class WordPage extends React.Component {
 					</div>
 					<div className="col-3">
 						<h2 className="heading">About My Words:</h2>
-						<p className="center-text">I write short stoires and unfinished segments of long stories. In college my creative writing professor said that he was 
+						<p className="center-text">I write short stories and unfinished segments of long stories. In college my creative writing professor said that he was 
 						a "Reluctant Fan" of my writing.  It is my favorite piece of praise I have ever received.  Sometimes I wonder if I would write more often and more 
 						diligently if I hadn't already received the most perfect compliment.</p>
 					</div>
