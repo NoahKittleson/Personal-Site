@@ -6,8 +6,8 @@ import gameImg from './Images/Screenshot3.png'
 import reclineImg from './Images/RecliningMan.png'
 import wordsImg from './Images/words-img.png'
 import EaselImg from './Images/Art Easel.png'
-import GatstonPdf from './The Mysterious Case of Bill Gatston.pdf'
-import BriePdf from './It\'s an Acquired Taste.pdf'
+import GatstonPdf from './Writing/The Mysterious Case of Bill Gatston.pdf'
+import BriePdf from './Writing/It\'s an Acquired Taste.pdf'
 
 
 import './App.css';
